@@ -1,0 +1,50 @@
+<!-- 
+form adalah sebuah elemen pada html yang digunakan untuk mengelola data dari input yang dilakukan oleh user
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<form>
+	<!-- membuat input text -->
+	<label for="username">username : </label>
+	<input type="text" id="username">
+	<!-- membuat input password -->
+	<!-- bedanya text dan password adalah jika password katakternya otomatis disembunyikan -->
+	<br>
+	<label for="password">password : </label>
+	<input type="password" id="password">
+	<br>
+	<!-- membuat radio buttom -->
+	<!-- name="jeniskelamin" keduanya sama agar jadi satu kelompok dan agar
+		hanya bisa memilih 1 saja tidak 2"nya-->
+	<input type="radio" id="pria" name="jeniskelamin"><label for="pria">pria</label>
+	<input type="radio" id="wanita" name="jeniskelamin"><label for="wanita">wanita</label>
+	<br>
+	<!-- membuat check box -->
+	<input type="checkbox" id="menyanyi"><label for="menyanyi">menyanyi</label>
+	<input type="checkbox" id="olahraga"><label for="olahraga">olahraga</label>
+	<input type="checkbox" id="ngoding"><label for="ngoding">ngoding</label>
+	<br>
+	<!-- membuat text area -->
+	<textarea></textarea>
+	<br>
+	<!-- membuat dropdown atau disebut dengan select -->
+	<select>
+		<option>bandung</option>
+		<option>jakarta</option>
+		<option>bali</option>
+	</select>
+	
+	<br>
+	<!-- membuat tombol -->
+	<!-- ada 3 type: submit, reset, button -->
+	<button type="submit">kirim</button>
+</form>
+
+</body>
+</html>
