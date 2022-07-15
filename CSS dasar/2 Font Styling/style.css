@@ -1,0 +1,56 @@
+/* struktur css=  selector{property:value;}.
+value boleh lebih dari satu.
+macam macam font:  */
+
+/*
+font family= gaya/bentuk dari hurufnya.
+font size= mengatur ukuran dari huruf
+font-weight: untuk memberikan efek ketebalan
+font variant: besar kecil
+font style: miring / tidak
+line-heigt: jarak antar baris
+-- value
+font family: 
+arial, georgia verdana 
+font size: 
+px,%,em
+font-weight: 
+bold, normal
+font variant: 
+small capss
+font style:
+italic,normal
+line-heigt: 
+px,em,normal
+--
+sans-serif dan serif merupakan generic family. 
+-sans-serif adalah font font yang tidak memiliki
+ kaki(ujung dari bentuk huruf nya normal tidak tajam tajam).
+-serif font font yang memiliki kaki(ujung dari bentuk huruf 
+ nya tajam tajam/berbentuk).*/
+h1{
+	font-family: arial, verdana, sans-serif;
+	font-size: 100px;	
+	font-weight: normal;
+	font-variant: small-caps;
+	font-style: italic;
+}
+
+p{
+	font-family: georgia, serif;
+	line-height: 50px;
+}
+
+/* ------ penjelasan font-family: arial, verdana, sans-serif; -------
+
+kita bisa menggunakan berbagai jenis font sesuai dengan desain yang diinginkan. 
+Namun font yang akan ditampilkan pada web browser sepenuhnya berasal dari komputer user 
+(pengunjung web). Jika kita memilih font yang tidak standar, maka desain web yang telah 
+dirancang serapi mungkin akan menjadi ’kacau’ karena bisa saja font yang kita pilih 
+tidak tersedia di komputer pengunjung. Cara kerja: 
+
+Web browser pertama kali akan mencoba ‘mencari’ font dengan nama arial di komputer 
+user (pengunjung web) jika tidak ditemukan, maka web browser akan mencari font di urutan 
+selanjutnya, yakni font verdana. Dan jika tidak ditemukan juga, maka web browser akan 
+menampilkan font dengan jenis generik: sans-serif.
+*/

@@ -1,0 +1,89 @@
+<!-- 
+tag div dan spaw
+	tag <div> daan <spaw> tidak memiliki arti apapun, keduanya digunakan untuk 
+mengelompokan tag-tag html dan memberikan informasi terhadap tag-tag tersebut.
+	span biasanya dipake didalam text.
+
+Display 
+	setiap elemen html memiliki type display masing masing.
+	display memiliki value/type = inline, inline-block, block, none.
+
+Definisi:
+inline = tidak menambahkan baris baru ketika dibuat, lebar dan tinggi default nya sesuai dengan kontennya, tidak bisa diatur tinggi lebar kecuali img.
+inline-block = kita harus merubah secara manual property tersebut tidak seperty yang lain seacra default sudah ada tidak usah dirubah, perilaku dasarnya sama dengan elemen inline, perbedaannya ini bisa diatur tinggi lebarnya.
+block = menambahkan baris baru ketika dibuat, jika tidak diatur lebarnya maka lebar default nya akan memenuhi lebar dari bowsernya/parentnya, bisa diatur tinggi lebar.
+none = digunakan untuk menghilangkan sebuah elemen.
+
+tag tag html yang default display nya inline = a, input, i, ...(cari sendiri)
+tag tag html yang default display nya inline-block = h1-h6,p , ...(cari sendiri)
+tag tag html yang default display nya block = (cari sendiri)
+ -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display</title>
+	<style>
+		.main span{background-color: lightblue;} /*bacanya:  css tolong carikan saya span yang ada didalam class main*/
+		.linksatu a{ background-color: yellow; } /*inline lebar dan tinggi default nya sesuai dengan kontennya*/
+		img {width: 200px; height: 200px;}
+		.linkdua a{
+			background-color: red;
+			width: 200px;
+			height: 200px;
+			display: inline-block; /*inline-block kita harus merubah secara manual type display, bisa diatur tinggi lebarnya.*/
+		}
+		.main h2 {
+			background-color: lightseagreen; /*block; jika tidak diatur lebarnya maka lebar default nya akan memenuhi lebar dari bowsernya/parentnya*/
+		}
+		img{display: none;} /*none untuk menghilangkan sebuah elemen*/
+	</style>
+</head>
+<body>
+
+<div class="header">
+	<h1>Selamat Datang</h1>
+</div>
+
+<div class="linksatu">
+	<h2>Daftar Link pertama</h2>
+	<a href="#">Link 1</a>
+	<a href="#">Link 2</a>
+	<a href="#">Link 3</a>
+	<a href="#">Link 4</a>
+</div>
+
+<div class="linkdua">
+	<h2>Daftar Link kedua</h2>
+	<a href="#">Link 5</a>
+	<a href="#">Link 6</a>
+	<a href="#">Link 7</a>
+	<a href="#">Link 8</a>
+</div>
+
+
+<div class="main">
+	<h2>Judul Artikel</h2>
+	<img src="logo.jpg">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco <span>laboris nisi ut aliquip</span> ex ea 
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	 
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<div class="copyright">
+	<p>Copyright 2021</p>
+</div>
+
+</body>
+</html>

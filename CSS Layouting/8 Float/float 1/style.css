@@ -1,0 +1,18 @@
+/*
+Float merupakan properti CSS yang bisa kita manfaatkan untuk memposisikan suatu elemen. Sebuah elemen dapat dipaksa untuk
+berada di sebelah kiri atau kanan dari parent/prmbungkusnya dengang menggunakan properti ini. nilai dari float sendiri 
+adalah none(ini default), left, right, inherit.
+float termasuk kedalam out-of flow
+*/
+.container{
+	width: 600px;
+	border: 1px solid black;
+	margin: auto;
+	padding: 5px;
+}
+
+/*text akan mengelilingi gambar*/
+img{
+	float: right;
+	margin: 5px;
+}

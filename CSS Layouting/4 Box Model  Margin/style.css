@@ -1,0 +1,56 @@
+/* margin adalah area transparan disekitar kota.
+margin seperti jarak antar elemen.
+- overlapping margin =
+contoh: 
+kalo 2 elemen yang memiliki margin pada vertikal / berjajar kebawah:  margin yang dipilih adalah margin yang paling besar.
+kalo yang horizontal / berjajar kesamping 2elemennya maka:  akan dijumlahkan kedua marginnya
+
+-negetif margin: 
+kotak nya akan bergerak berlawanana arah
+
+- outo: 
+nilai yang bisa kita kasih kedalam margin khusuh untuk margin kiri dan kanan
+
+-shorthand: 
+cara menyingkat penulisan margin*/
+
+.satu{
+	width: 200px;
+	height: 200px;
+	background-color: lightgreen;
+	margin-left: 100px; /* area/jarak nya 100px kekiri */
+	margin-top: 30px;
+	margin-bottom: 150px;
+	margin-right: 150px;
+}
+
+.dua{
+	width: 100px;
+	height: 100px;
+	background-color: lightblue;
+	margin-top: -160px; /*seharusnya kotaknya bergerak kebawah tapi karna ini negeatif jadi akan melawan arah*/
+}
+
+.tiga{
+	width: 50px;
+	height: 50px;
+	background-color: violet;
+
+	/* ini akan membuat elemennya berada ditengah dari parentnya*/
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.empat{
+	width: 80px;
+	height: 80px;
+	background-color: darkred;
+
+	/*shorthand(singkatan)
+	contoh=  margin: 
+	1. 50px => (semuasisinya50px)
+	2. 50px 100px => (atasbawah) (kanankiri)
+	3. 50px auto 50px => (atas) (knankiri) (bawah)
+	4. 50px 40px 30px 20px => (atas) (kanan) (bawah) (kiri)*/
+	margin: 20px;
+}

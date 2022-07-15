@@ -1,0 +1,28 @@
+<!-- 
+Dimensi sebenarnya hanya width(lebar) dan height(tinggi).
+Satuan width height = px (ukrannya pasti), % (ukuran tergantung parent/browsernya), in (inci), cm (centimeter), mm (milimeter), pt (point), pc (paicam)
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dimensi</title>
+	<style type="text/css">
+		/*div display andalah blok, jadi bisa diatur dimensi*/
+		.satu{
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+		}
+		.dua{
+			width: 80%; /*ukutan % tergantung pada parent nya*/
+			background-color: aqua;
+		}
+	</style>
+</head>
+<body>
+	<div class="satu">
+		<div class="dua">hello world</div>
+	</div>
+</body>
+</html>

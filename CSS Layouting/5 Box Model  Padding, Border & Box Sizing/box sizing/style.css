@@ -1,0 +1,21 @@
+/*box-sizing adalah css property yang digunakan untuk merubah kalkulasi dalam mengukur lebar element.
+Sebagaimana diketahui, secara default sebuah konten box (content-box) akan bertambah lebar ukurannya apabila diberi border, padding, height dan width.
+ketika box-sizing dideklarasikan, maka border, padding dan ukuran sebuah konten box bergantung pada value yang ditentukan.*/
+
+div{
+	width: 600px;
+	margin: 10px auto;
+	box-sizing: border-box; /*ini akan lebar dari kotaknya akan tetap 600px berapapun padding dan border yang kita ksih*/
+}
+
+.satu{
+	background-color: royalblue;
+	padding: 10px;
+	border: 5px solid red;
+}
+
+.dua{
+	background-color: lightgreen;
+	padding: 30px;
+	border: 5px dashed; red;
+}

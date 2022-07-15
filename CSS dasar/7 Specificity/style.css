@@ -1,0 +1,34 @@
+/*  
+p {color: red;} p pertama
+p{color: green;} p kedua
+warna paragraf nya akan hijau, p yang kedua akan menimpa p pertama
+*/
+
+/*
+#p1{color: red;}
+p{color: green;}
+warna pargrafnya merah karna:  #p1 lebih spesifik dari p, dan id nilainya lebih berat
+*/
+
+
+/*
+ul#sarapan li { cara bacanya: css tolong carikan saya li yang ada di ul tapi yang punya id sarapan
+	color: green;
+}
+.favorit{
+	color: red;
+}
+semuanya warna hijau karna nilai id lebih berat/besat dari pada class
+*/
+
+/*cara agar si nasi gorengnya menjadi merah: 
+1.BUAT ELEMEN YANG DIINGINKAN AGAR MENJADI LEBIH SPESIFIK
+2.TAMBAHKAN BEBAN PADA ELEMEN TERSEBUT AGAR SEMAKIN BERAT
+contoh: 
+*/
+ul#sarapan li { 
+	color: green;
+}
+ul#sarapan li.favorit{ /*css tolong carikan saya li yang punya class favorit dan dia berada di dalam ul yang punya id sarapan*/
+	color: red;
+}

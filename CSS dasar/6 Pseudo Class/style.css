@@ -1,0 +1,50 @@
+/*Pseudo Class Selector adalah selector CSS yang digunakan untuk mengakses bagian
+ tertentu dalam HTML yang tidak 'terlihat' (tidak tertulis di dalam HTML) atau 
+ bagian dari HTML yang tidak bisa diakses dengan selector sederhana lain.
+*/
+
+/*------------Pseudo class yang berhubungan dengan link:  */
+.hello:link { /*ini akan bekerja ketika elemennya a*/
+	color: orange;
+}
+.hello:hover { /*akan aktif saat kursor didekatkan*/
+	color: green;
+	font-family: arial;
+	font-size: 20px;
+}
+.hello:active{ /*akan aktif saat diklik/saat aktif*/
+	font-style: italic;
+}
+.hello:visited { /*akan aktif saat saat link sudah pernah dikunjungi*/
+	color: red;
+}
+
+/*----------Pseudo class yang berhubungan dengan posisi element:  */
+/*1. child =>       ini khusu anak dari elemnt lain*/
+
+li:first-child a { /*bacanya: css carikan saya li tapi yg anak pertama lalu a didlmnya*/
+	color: green;
+}
+li:last-child a { /*bacanya: css carikan saya li tapi yg anak terkhir lalu a didlmnya*/
+	color: red;
+}
+/*nth-child digunakan untuk menyeleksi element berdasarkan urutan anak (child). 
+nth-child ditulis dengan kode seperti: :nth-child(X) : X = bisa ditulis dengan nomor, 
+keyword ataupun formula*/
+li:nth-child(3n) a { /*kelipatan 3*/
+	color: pink;
+}
+li:nth-child(even) a:hover { /*setiap anak yang genap dihover jadi warna putih*/
+	color: white;
+	/*even=genap, add=ganjil*/
+}
+
+/*2. yang bukan anak*/
+/*elemen yg pertama kali ketemu*/
+p:first-of-type {
+	color: red;
+}
+/*elemen yg terakhir ketemu*/
+p:last-of-type {
+	color: lightsalmon;
+}

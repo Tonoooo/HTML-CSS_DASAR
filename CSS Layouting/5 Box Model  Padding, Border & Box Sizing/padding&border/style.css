@@ -1,0 +1,32 @@
+/*border = batas sekeliling content dan padding.
+padding = area transparan di dalam kotak (antara kotak dan border).
+
+padding tidak bisa pake nilai9 negetif dan auto
+padding memengaruhi ukuran elemen.
+
+border juga memengaruhi ukuran elemen*/
+
+.satu{
+	width: 300px;
+	height: 300px;
+	background-color: coral;
+	margin: 20px auto;
+	/* padding
+	padding-left: 20px; nambah jarak 20px*/
+	padding: 10px 20px 30px 40px; /*(atas) (kanan) (bawah) (kiri)*/
+	/* border = garis batas*/
+	border: 5px solid black; /*(lebar bodernya) (style/jenis border) (warna boeder)*/
+}
+
+.dua{
+	width: 300px;
+	height: 300px;
+	background-color: lightblue;
+	margin: 20px auto;
+
+	padding: 50px; /*semua sisi 50px*/
+	
+	border-left: 5px double royalblue; /*(lebar bodernya) (style/jenis border) (warna boeder)*/
+	border-right: 5px dashed rosybrown; /*(lebar bodernya) (style/jenis border) (warna boeder)*/
+	border-top: 5px dotted greenyellow; /*(lebar bodernya) (style/jenis border) (warna boeder)*/
+}

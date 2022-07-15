@@ -1,0 +1,28 @@
+/*css menbedakan font dan text, jika
+font terkait dengan tipe face nya, sedangkan text terkait dengan proterti pendukungnya*/
+/*---- properti text: 
+color = memberiwarna
+text align = mengatur format paragraf / text
+text indent = memberi indentsi pada paragraf / text
+text decoration = mengatur dekorasi pada text
+text transform = mengubah jenis huruf jadi kecil / besar
+letter spacing = mengatur spasi antar huruf
+word spacing= mengatur spasi antar kata*/
+
+h1{
+	font-size: 100px;
+	color: purple;
+	/*text-decoration: underline; garis bawah*/
+	text-decoration: line-through;/*seperti dicoret*/
+	text-transform: lowercase; /*jadi huruf kecil*/
+}
+p{
+	/*text-align: center;   tulisannya rata tengah */
+	text-indent: 100px; /*awal text nya ada banyak spasi*/ 
+	letter-spacing: 10px; /*jarak antar huruf*/
+	word-spacing: 10px;
+}
+
+a{
+	text-decoration: none;/*garis bawah dihyperlink hilang*/
+}

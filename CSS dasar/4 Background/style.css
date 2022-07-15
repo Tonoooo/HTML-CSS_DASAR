@@ -1,0 +1,28 @@
+/*
+Background property: 
+-Background-color=
+mengatur warna Background
+-Background-image=
+mengatur gambar yang akan di gunakan untuk Background
+-Background-repeat=
+mengatur jenis pengulangan pada Background
+-Background-position=
+Jika kita menggunakan no-repeat kita bisa mengatur posisi gambar pada Background.
+value: top left/center/right, center left/center/right, bottom left/center/right,
+x-pos, y-pos.
+
+- Bisa disingkat
+background: color url() position repeat*/
+
+body{
+	background-color: white; /*warna background nya*/
+	background-image: url(bg2.jpg); /*secara default gambar bekgron akan selalu diulang terhadap sumbu x dan y*/
+	/*background-repeat: repeat-x;  gambar nya diulang hanya disumbu x saja	*/
+	/*background-repeat: repeat-y;  gambar nya diulang hanya disumbu y saja	*/
+	background-repeat: no-repeat; /*agar gambarnya tidak diulang*/
+	background-position: top center;
+}
+/*disingkat: 
+body{
+	background: white url(bg2.jpg) no-repeat top center;
+}*/
