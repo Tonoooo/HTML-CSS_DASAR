@@ -1,0 +1,56 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(19, 19, 19);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: black;
+    text-align: center;
+}
+
+header img{
+    max-width: 250px;
+}
+
+.hero{
+    background-image: url('assets/penutup_kabah.jpeg');
+    background-size: cover;
+    /* background opasity */
+    background-color: rgba(0, 0, 0, 0.88);
+    background-blend-mode: darken;
+    height: 100vh;
+    display: flex;
+    font-size: 150%;
+}
+
+.hero-content{
+    width: 80%;
+    margin: auto;
+    padding: 90px;
+}
+
+.hero-content img{
+    padding-left: 90px;
+    height: 600px;
+    width: 500px;
+    /* image opasity */
+    opacity: 0.3;
+}
+
+.hero-content h1, h3{
+    color: #AE9B68;
+}
+
+.hero-content p{
+    color: #BEBEBE;
+}
+
+@media screen and (max-width: 600px) { 
+
+    header img{
+        max-width: 150px;
+    }
+    
+}
