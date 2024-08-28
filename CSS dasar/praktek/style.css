@@ -1,8 +1,8 @@
-body{
-    padding: 0px;
-    margin: 0px;
-    background-color: rgb(19, 19, 19);
+body {
+    padding: 0;
+    margin: 0;
     font-family: 'Times New Roman', Times, serif;
+    background-color: black;
 }
 
 header {
@@ -10,47 +10,280 @@ header {
     text-align: center;
 }
 
-header img{
-    max-width: 250px;
+header img {
+    max-width: 120px;
 }
 
-.hero{
-    background-image: url('assets/penutup_kabah.jpeg');
+.hero {
+    background-image: url('assets/penutup_kabah.jpg');
     background-size: cover;
     /* background opasity */
-    background-color: rgba(0, 0, 0, 0.88);
+    background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: darken;
-    height: 100vh;
-    display: flex;
-    font-size: 150%;
+    display: inline-block;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
-.hero-content{
+.hero-content {
     width: 80%;
     margin: auto;
-    padding: 90px;
+    padding: auto;
 }
 
-.hero-content img{
+.hero-content h1, h3 {
+    font-size: 120%;
+    color: #AE9B68;
+    text-align: center;
+    animation: slide-in-kekiri 1s ease-out;
+}
+
+.hero-content p {
+    color: #BEBEBE;
+    line-height: 1.3;
+    text-align: justify ;
+    word-spacing: 0.2em;
+    position: relative;
+    animation: slide-in-kekanan 1s ease-out;
+}
+
+@keyframes slide-in-kekanan {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+@keyframes slide-in-kekiri {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+.hero-content img {
     padding-left: 90px;
     height: 600px;
     width: 500px;
     /* image opasity */
     opacity: 0.3;
+    display: none;
 }
 
-.hero-content h1, h3{
+.parallax-hutan {
+    background-image: url('assets/hutan.jpeg');
+    height: 150px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+
+.rukun-iman {
+    color: #AE9B68;
+    list-style-type: decimal;
+    margin: 0;
+    padding: 30px;
+}
+
+.rukun-iman li {
+    margin-bottom: 20px;
+    padding-left: 5px;
+    position: relative;
+}
+
+.rukun-iman li h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
     color: #AE9B68;
 }
 
-.hero-content p{
+.rukun-iman li p {
+    margin: 0;
+    font-size: 1rem;
     color: #BEBEBE;
 }
 
-@media screen and (max-width: 600px) { 
+.parallax-unta {
+    background-image: url('assets/padang_pasir.jpeg');
+    height: 150px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
 
-    header img{
-        max-width: 150px;
+.takdir {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #AE9B68;
+}
+
+.takdir h2 {
+    font-size: x-large;
+    text-align: center;
+}
+
+.manisnya-iman {
+    padding: 25px;
+    margin-top: 10px;
+    color: #BEBEBE;
+}
+
+.manisnya-iman img{
+    width: auto;
+    height: 350px;
+    overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+}
+
+.manisnya-iman ul {
+    color: #AE9B68;
+}
+
+footer {
+    color: #AE9B68;
+    text-align: center;
+    font-size: 10px;
+}
+
+footer img {
+    max-width: 200px;
+}
+
+@media screen and (min-width: 768px) {
+
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
     }
+    header img{
+        max-width: 180px;
+    }
+
+    .hero {
+        display: inline-flex;
+        padding-top: 13%;
+        padding-bottom: 5%;
+        background-color: rgba(0, 0, 0, 0.88);
+        background-blend-mode: darken;
+    }  
+
+    .hero-content img {
+        display: block;
+        border-radius: 3px;
+    }
+
+    .hero-content h1{
+        text-align: left;
+        font-size: 300%;
+        margin-bottom: 0px;
+    }
+
+    .hero-content h3 {
+        text-align: left;
+        font-size: 200%;
+        margin-top: 0px;
+    }
+
+    .hero-content p {
+        text-align: justify;
+        padding-right: 15%;
+    }
+
+    .hero-content img {
+        width: 500px;
+        height: 600px;
+        border-radius: 30px;
+    }
+
+    .rukun-iman {
+        display: flex;
+        flex-wrap: wrap; /* Memungkinkan untuk dua kolom */
+        padding: 100px;
+    }
+
+    .rukun-iman li {
+        width: 48%; /* Lebar setiap item menjadi 48% agar dua item dapat berada dalam satu baris */
+        margin-right: 2%; /* Memberikan jarak antar kolom */
+        padding-left: 2%; /* Memberikan padding agar tidak menempel ke tepi */
+        box-sizing: border-box; /* Menghindari lebar lebih dari yang diinginkan */
+    }
+
+    .rukun-iman li:nth-child(2n) {
+        margin-right: 0; /* Menghilangkan margin pada item genap */
+    }
+
+    .rukun-iman li h2 {
+        font-size: 1.4rem; /* Memperbesar teks heading di desktop */
+    }
+
+    .rukun-iman li p {
+        font-size: 1.1rem; /* Memperbesar teks paragraf di desktop */
+    }
+
+    .takdir h2, .takdir h3 {
+        font-size: xx-large;
+        text-align: center;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .manisnya-iman {
+        display: flex;
+        flex-direction: row;
+        margin: 5em;
+        font-size: large;
+        line-height: 1.5;
+        padding-top: -0;
+        margin-top: -0;
+    }
+
+    .manisnya-iman img {
+        height: 400px;
+        width: auto;
+    }
+
+    .hadis {
+        flex-direction: column; /* Membuat dua kolom secara horizontal */
+        width: 60%; /* Kolom kanan untuk teks, p, ul, dan li */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Menjaga teks tetap vertikal */
+    }
+
+    .hadis p, .hadis ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .hadis ul {
+        list-style-position: inside; /* Menjaga indentasi list tetap rapi */
+    }
+
+    .iman-manis p {
+        font-size: 20px;
+    } 
+
+    footer img {
+        max-width: 200px;
+    }   
     
 }
