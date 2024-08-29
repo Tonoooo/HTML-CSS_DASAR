@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #1D2A35;
+    display: inline-flex;
+    align-items: center;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+header ul {
+    list-style-type: none;
+    align-items: center;
+    display: inline-flex;
+}
+
+
+header li {
+    margin: 0 15px;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+
+ul a:hover {
+    background-color: #4CAF50;
+    border-radius: 4px;
+}
+
+
+.cari {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 18px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.login-signup {
+    background-color: #ddd;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 18px;
+    display: flex;
+}
+
+.masuk {
+    border-radius: 18px;
+    background-color: #45a049;
+}
+
+.daftar {
+    border-radius: 18px;
+    background-color: #ddd;
+    color: #1D2A35;
+}
+
+.daftar:hover {
+    background-color: #45a049;
+    background-color: #4CAF50;
+    color: #ddd;
+    }
+.login-signup:hover {background-color: #45a049;}
