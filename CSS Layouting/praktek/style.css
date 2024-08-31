@@ -2,21 +2,34 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #1D2A35;
 }
 
 header {
     background-color: #1D2A35;
-    display: inline-flex;
-    align-items: center;
-    padding: 0;
+    display: flex;
+    /* align-items: center; */
     position: fixed;
     top: 0;
     width: 100%;
+    /* justify-content: space-around; */
+    font-size: 20px;
+    flex-direction: column;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo img {
-    width: 50px;
+    width: 67px;
     height: auto;
+}
+
+.menu-dropdown {
+    display: none;
 }
 
 header ul {
@@ -42,20 +55,6 @@ ul a:hover {
     border-radius: 4px;
 }
 
-
-.cari {
-    display: flex;
-    align-items: center;
-}
-
-input[type="text"] {
-    padding: 5px;
-    margin-right: 10px;
-    border-radius: 18px;
-    border: 1px solid #ddd;
-    background-color: #fff;
-}
-
 .login-signup {
     background-color: #ddd;
     color: #fff;
@@ -64,6 +63,8 @@ input[type="text"] {
     transition: background-color 0.3s;
     border-radius: 18px;
     display: flex;
+    margin-right: 18px;
+
 }
 
 .masuk {
@@ -81,5 +82,110 @@ input[type="text"] {
     background-color: #45a049;
     background-color: #4CAF50;
     color: #ddd;
-    }
+}
+
 .login-signup:hover {background-color: #45a049;}
+
+.search-container {
+    position: relative;
+}
+
+.search-container i {
+    position: absolute;
+    right: 10px; /* Atur posisi ikon */
+    top: 50%;
+    transform: translateY(-50%);
+}
+.search-container input {
+    padding: 10px;
+    padding-right: 30px; /* Beri ruang untuk ikon */
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+.search-container input:focus {
+    outline: 6px solid #04AA6D; /* Outline hijau saat fokus */
+    border: none; /* Menghilangkan border default */
+}
+
+.search-container input::placeholder {
+    font-style: italic; /* Memiringkan teks placeholder */
+    color: #999; /* Warna placeholder */
+}
+
+nav {
+    background-color: #282A35; /* Warna latar belakang nav */
+    padding: 10px; /* Ruang atas dan bawah */
+    font-size: 16px;
+    overflow-x: auto; /* Mengizinkan scroll horizontal */
+    white-space: nowrap; /* Mencegah item menu terputus */
+    scrollbar-width: none; /* Menghilangkan scrollbar di Firefox */
+}
+
+nav::-webkit-scrollbar {
+    display: none; /* Menghilangkan scrollbar di Webkit (Chrome, Safari) */
+}
+
+.menu-materi {
+    display: inline-flexbox; /* Mengatur menu menjadi baris */
+    justify-content: center; /* Pusatkan menu secara horizontal */
+    list-style-type: none; /* Menghilangkan bullet point */
+    margin: 0; /* Menghilangkan margin default */
+    padding: 0; /* Menghilangkan padding default */
+}
+
+.menu-materi li {
+    margin: 0 15px; /* Jarak antar item menu */
+    white-space: nowrap; /* Mencegah teks terputus menjadi dua baris */
+}
+
+.menu-materi a {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: #fff; /* Warna teks */
+    padding: 8px 12px; /* Ruang dalam untuk link */
+    transition: background-color 0.3s; /* Transisi saat hover */
+}
+
+.menu-materi a:hover {
+    background-color: #000000; /* Warna latar belakang saat hover */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin-top: 0;
+    padding-top: 3%;
+    padding-right: 1;
+    width: 15%;
+    background-color: #15202B;
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+    z-index: -1;
+}
+
+.sidebar li a {
+    display: block;
+    color: #ddd;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.sidebar li a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.sidebar li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.content {
+    color: #ddd;
+    margin-left: 20%;
+    margin-top: 7%;
+    font-size: 130%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    padding-right: 5%;
+}
