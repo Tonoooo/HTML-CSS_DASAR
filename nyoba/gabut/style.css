@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 80%;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  header li {
+    float: left;
+  }
+  
+  header li a {
+    display: block;
+    color: rgb(92, 91, 91);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+
+.btn-login {
+    background-color: rgb(0, 119, 255);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.banner {
+    text-align: center;
+    margin-top: 20%;
+}
+
+.searching {
+    text-align: center;
+    position: relative;
+}
+
+.searching span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(15%); 
+}
+
+.searching input {
+    border-radius: 20px;
+    padding: 8px;
+    padding-right: 50px;
+}
+
+.searching input::placeholder {
+    font-style: italic; /* Memiringkan teks placeholder */
+    color: #999; /* Warna placeholder */
+}
