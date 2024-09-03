@@ -41,6 +41,11 @@ header ul {
     margin-top: 20%;
 }
 
+.banner h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
 .searching {
     text-align: center;
     position: relative;
@@ -49,16 +54,101 @@ header ul {
 .searching span {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%) translateX(15%); 
+    transform: translateY(-50%);
+    left: 33px;
+    color: #999;
+
 }
+
 
 .searching input {
     border-radius: 20px;
     padding: 8px;
-    padding-right: 50px;
+    padding-left: 35px;
+    width: 290px;
 }
 
 .searching input::placeholder {
     font-style: italic; /* Memiringkan teks placeholder */
     color: #999; /* Warna placeholder */
+}
+
+.trending {
+    margin-top: 50px;
+    font-size: 18x;
+}
+
+.trending h2 {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+
+.trending ul {
+    list-style-type: none;
+    padding-right: 40px;
+}
+
+.trending li {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+
+.trending li a {
+    text-decoration: none;
+    margin-left: 30px;
+
+}
+
+.trending li span {
+    color: #999;
+    font-size: 18px;
+
+}
+
+@media screen and (min-width: 768px) { 
+    .trending {
+        display: none;
+    }
+    
+    .nav-menu li{
+        display: flex;
+        padding: 5px 20px;
+        font-size: 15px
+    }
+
+    .banner {
+        margin-top: 5%;
+    }
+
+    .banner h1 {
+        font-size: 80px;
+    }
+
+    .searching input{
+        font-size: 20px;
+        padding: 15px;
+        padding-left: 55px;
+        margin-top: 30px;
+        width: 600px;
+        border-radius: 30px;
+        border: 2px solid #5f5f5f;
+        transition: box-shadow 0.3s; /* Transisi untuk efek halus */
+    }
+
+    .searching input:focus {
+        box-shadow: 0 0 15px rgba(104, 104, 104, 0.596); /* Efek box shadow saat fokus */
+        outline: none; /* Menghilangkan outline default */
+        border-color: #8a8a8a; /* Mengubah warna border saat fokus */
+    }
+
+    .searching span {
+        transform: translateX(490px);
+        font-size: 30px;
+    }
+
 }
